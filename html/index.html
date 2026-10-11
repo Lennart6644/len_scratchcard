@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rubbellos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app" class="app hidden">
+        <div class="backdrop"></div>
+        <div class="stage">
+            <div id="ticket" class="ticket">
+                <canvas id="face" class="face"></canvas>
+                <div id="window" class="window">
+                    <div id="prize" class="prize">
+                        <span id="prizeLabel" class="prize-label"></span>
+                        <span id="prizeValue" class="prize-value"></span>
+                    </div>
+                    <canvas id="foil"></canvas>
+                </div>
+                <div id="confetti" class="confetti"></div>
+            </div>
+
+            <div class="progress">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <p id="progressText" class="progress-text"></p>
+            <p id="hint" class="hint"></p>
+            <button id="closeBtn" class="btn" type="button"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
